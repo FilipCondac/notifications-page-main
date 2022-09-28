@@ -22,12 +22,22 @@
 <body>
   <div class="main-container">
     <div class="grid-container-element">
-      <h1 class=.col-md-8> Notifications {3} </h1>
+      <h1 class=.col-md-8> Notifications <span class="counter">
+          <script>
+            let counter = 3;
+            document.write(counter);
+
+            function decreaseValue() {
+              counter--;
+
+            }
+          </script>
+        </span></h1>
       <p class=".col-md-4 second"> Mark all as read </p>
     </div>
 
     <div class=main-content>
-      <div class="container">
+      <div class="container zoom" onclick="decreaseValue()">
         <div class="row ">
 
           <div class="col-md-2">
@@ -35,14 +45,15 @@
           </div>
 
           <div class="col-md-10">
-            <b> Mark Webber </b> reacted to your recent post My first tournament today!</br>
+            <b style="color: black;"> Mark Webber </b> reacted to your recent post <b>My first tournament today!
+            </b></br>
             1m ago
           </div>
 
         </div>
       </div>
 
-      <div class="container">
+      <div class="container zoom" onclick="decreaseValue()">
         <div class="row ">
 
           <div class="col-md-2">
@@ -50,14 +61,14 @@
           </div>
 
           <div class="col-md-10">
-            <b> Angela Gray </b> followed you</br>
+            <b style="color: black;"> Angela Gray </b> followed you</br>
             5m ago
           </div>
 
         </div>
       </div>
 
-      <div class="container">
+      <div class="container zoom">
         <div class="row ">
 
           <div class="col-md-2">
@@ -65,7 +76,8 @@
           </div>
 
           <div class="col-md-10">
-            <b>Jacob Thompson</b> has joined your group Chess Club
+            <b style="color: black;">Jacob Thompson</b> has joined your group <b style="color:hsl(219, 42%, 53%)">Chess
+              Club </b>
             </br>
             1 day ago
           </div>
@@ -73,7 +85,7 @@
         </div>
       </div>
 
-      <div class="container">
+      <div class="container zoom">
         <div class="row ">
 
           <div class="col-md-2">
@@ -81,7 +93,7 @@
           </div>
 
           <div class="col-md-10">
-            <b> Rizky Hasanuddin </b> sent you a private message
+            <b style="color: black;"> Rizky Hasanuddin </b> sent you a private message
             </br>
             5 days ago
             <br>
@@ -97,7 +109,7 @@
         </div>
       </div>
 
-      <div class="container">
+      <div class="container zoom">
         <div class="row ">
 
           <div class="col-lg-2 col-md-2">
@@ -105,7 +117,7 @@
           </div>
 
           <div class="col-lg-6 col-md-10">
-            <b> Kimberly Smith</b> commented on your picture
+            <b style="color: black;"> Kimberly Smith</b> commented on your picture
             <br>
             1 week ago
 
@@ -118,7 +130,7 @@
         </div>
       </div>
 
-      <div class="container">
+      <div class="container zoom">
         <div class="row ">
 
           <div class="col-md-2">
@@ -126,7 +138,9 @@
           </div>
 
           <div class="col-md-10">
-            <b> Nathan Peterson </b> reacted to your recent post 5 end-game strategies to increase your win rate
+            <b style="color: black;"> Nathan Peterson </b> reacted to your recent post <b> 5 end-game strategies to
+              increase
+              your win rate</b>
 
             </br>
             2 weeks ago
@@ -135,7 +149,7 @@
         </div>
       </div>
 
-      <div class="container">
+      <div class="container zoom">
         <div class="row ">
 
           <div class="col-md-2">
@@ -143,7 +157,8 @@
           </div>
 
           <div class="col-md-10">
-            <b> Anna Kim </b> left the group Chess Club
+            <b style="color: black;"> Anna Kim </b> left the group <b style="color:hsl(219, 42%, 53%)">Chess
+              Club </b>
 
             </br>
             2 weeks ago
@@ -159,6 +174,9 @@
       Coded by <a href="#">Filip Condac</a>.
     </div>
   </div>
+  <script>
+
+  </script>
 </body>
 
 </html>
