@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
 body {
-    background-color: hsl(211, 68%, 94%)
+    background-color: hsl(211, 68%, 94%);
+    font-family: 'Plus Jakarta Sans', sans-serif;
   }
 
   .attribution {
@@ -19,6 +21,17 @@ body {
     border-radius: 25px;
     padding: 2%;
     background-color: hsl(0, 0%, 100%);
+  }
+
+  h1{
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .content-text{
+    font-size: 16px;
   }
 
   .grid-container-element {
@@ -43,8 +56,20 @@ body {
       width: 90%;
       margin-left: auto;
       margin-right: auto;
-      border: 2px solid black
+      border: 1px solid rgb(134, 134, 134);
+      font-size: 16px;
+      color: rgb(134, 134, 134);
   }
   .image-comment{
       padding-left: 13%;
+  }
+
+  .profile-img{
+      width: 3rem;
+      height: auto;
+      margin-left: 30px;
+  }
+
+  .container{
+      padding-bottom: 3%;
   }
