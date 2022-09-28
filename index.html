@@ -22,22 +22,17 @@
 <body>
   <div class="main-container">
     <div class="grid-container-element">
-      <h1 class=.col-md-8> Notifications <span class="counter">
-          <script>
-            let counter = 3;
-            document.write(counter);
+      <h1 class=.col-md-8> Notifications <span id="counting" class="counting"></span>
+      </h1>
 
-            function decreaseValue() {
-              counter--;
-
-            }
-          </script>
-        </span></h1>
-      <p class=".col-md-4 second"> Mark all as read </p>
+      <p class=".col-md-4 second"
+        onclick="messageRead('post1'); messageRead('post2'); messageRead('post3'); decrementAll();"> Mark all
+        as read </p>
     </div>
 
     <div class=main-content>
-      <div class="container zoom" onclick="decreaseValue()">
+      <div class="container zoom unread-notification"
+        onclick="messageRead('post1'); decrement(); onClickRemover('post1');" id="post1">
         <div class="row ">
 
           <div class="col-md-2">
@@ -53,7 +48,8 @@
         </div>
       </div>
 
-      <div class="container zoom" onclick="decreaseValue()">
+      <div class="container zoom unread-notification"
+        onclick="messageRead('post2'); decrement(); onClickRemover('post2');" id="post2">
         <div class="row ">
 
           <div class="col-md-2">
@@ -68,10 +64,11 @@
         </div>
       </div>
 
-      <div class="container zoom">
-        <div class="row ">
+      <div class="container zoom unread-notification"
+        onclick="messageRead('post3'); decrement(); onClickRemover('post3');" id="post3">
+        <div class=" row ">
 
-          <div class="col-md-2">
+          <div class=" col-md-2">
             <img src="assets/images/avatar-jacob-thompson.webp" class="profile-img">
           </div>
 
@@ -174,8 +171,7 @@
       Coded by <a href="#">Filip Condac</a>.
     </div>
   </div>
-  <script>
-
+  <script src="js/readMessage.js">
   </script>
 </body>
 

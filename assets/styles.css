@@ -3,6 +3,7 @@ body {
     background-color: hsl(211, 68%, 94%);
     font-family: 'Plus Jakarta Sans', sans-serif;
     color: rgb(134, 134, 134);
+   
   }
 
   .attribution {
@@ -30,7 +31,8 @@ body {
     font-size: 1.5rem;
     padding-bottom: 1rem;
   }
-  .counter{
+  
+  .counting{
       background-color:  hsl(219, 42%, 53%);
       color: white;
       padding-left: 4px;
@@ -80,6 +82,13 @@ body {
 
   .container{
       padding-bottom: 3%;
+      padding-top: 3%;
+      margin-bottom: 2%;
+      border-radius: 5px;
+  }
+
+  .unread-notification{
+      background-color: hsl(205, 33%, 90%);
   }
 
   .zoom {
